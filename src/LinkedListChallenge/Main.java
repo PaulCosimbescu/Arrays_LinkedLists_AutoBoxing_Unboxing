@@ -1,13 +1,12 @@
 package LinkedListChallenge;
 
 import org.jetbrains.annotations.Nullable;
-
 import java.util.*;
 
 public class Main {
 
-    private static  ArrayList<Album> myAlbums = new ArrayList<Album>();
-    private static LinkedList<String> playlist = new LinkedList<String>();
+    private static  List<Album> myAlbums = new ArrayList<Album>();
+    private static List<String> playlist = new LinkedList<String>();
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {

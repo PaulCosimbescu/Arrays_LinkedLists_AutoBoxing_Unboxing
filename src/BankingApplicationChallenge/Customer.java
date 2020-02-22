@@ -1,11 +1,12 @@
 package BankingApplicationChallenge;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Customer {
 
     private String name;
-    private ArrayList<Double> transactionsArray;
+    private List<Double> transactionsArray;
 
     public Customer(String name, double initialAmount) {
         this.name = name;
@@ -18,7 +19,7 @@ public class Customer {
         return name;
     }
 
-    public ArrayList<Double> getTransactionsArray() {
+    public List<Double> getTransactionsArray() {
         return transactionsArray;
     }
 

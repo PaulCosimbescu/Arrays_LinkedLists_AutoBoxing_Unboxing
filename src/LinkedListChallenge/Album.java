@@ -3,10 +3,11 @@ package LinkedListChallenge;
 
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Album {
 
-    private ArrayList<Song> songs;
+    private List<Song> songs;
     private String name;
 
     public Album(String name) {
@@ -14,7 +15,7 @@ public class Album {
         this.songs = new ArrayList<Song>();
     }
 
-    public ArrayList<Song> getSongs() {
+    public List<Song> getSongs() {
         return songs;
     }
 
