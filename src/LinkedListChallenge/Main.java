@@ -44,7 +44,9 @@ public class Main {
 
         printAlbums();
 
+        printAction();
         while(!quit) {
+
                 int action = scanner.nextInt();
                 scanner.nextLine();
                 switch (action) {
@@ -84,6 +86,9 @@ public class Main {
                         break;
                     case 5:
                         printList();
+                        break;
+                    case 6:
+                        printAction();
                         break;
                 }
         }
@@ -157,11 +162,12 @@ public class Main {
                 "3 - Add song to Playlist.\n" +
                 "4 - Listen to Playlist\n" +
                 "5 - Show the Playlist\n" +
-                "6 - to print a list of available actions.\n");
+                "6 - Show available actions.\n");
         System.out.println("Choose your action: ");
     }
 
     private static void control() {
+
         boolean quit = false;
         boolean goingForward = true;
         ListIterator<String> listIterator = playlist.listIterator();
@@ -175,6 +181,7 @@ public class Main {
         }
 
         while(!quit) {
+
             int action = scanner.nextInt();
             scanner.nextLine();
             switch (action) {
@@ -213,7 +220,7 @@ public class Main {
                     }
                     break;
                 case 3:
-                    System.out.println("Playing from beginning " + listIterator);
+                    System.out.println("Playing from beginning ");
                     break;
                 case 4:
                     if(playlist.size() > 0) {
@@ -225,6 +232,9 @@ public class Main {
                         }
                     }
                     break;
+                case 5:
+                    printControlMenu();
+                    break;
             }
         }
     }
@@ -235,7 +245,10 @@ public class Main {
                 "1 - Skip Forward\n" +
                 "2 - Skip Backwards\n" +
                 "3 - Replay the song\n" +
-                "4 - Remove song");
+                "4 - Remove song\n" +
+                "5 - Show available actions.\n");
+        System.out.println("Choose your action: ");
     }
+
 
 }
