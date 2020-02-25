@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Main {
 
-    private static  List<Album> myAlbums = new ArrayList<Album>();
+    private static List<Album> myAlbums = new ArrayList<Album>();
     private static List<String> playlist = new LinkedList<String>();
     private static Scanner scanner = new Scanner(System.in);
 

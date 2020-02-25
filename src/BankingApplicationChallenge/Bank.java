@@ -3,6 +3,7 @@ package BankingApplicationChallenge;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Bank {
 
@@ -43,9 +44,8 @@ public class Bank {
 
     @Nullable
     private Branch findBranch(String branchName) {
-        for(int i = 0; i < myBranch.size(); i++) {
-            Branch checkBranch = this.myBranch.get(i);
-            if(checkBranch.getBranchCode().equals(branchName)) {
+        for (Branch checkBranch : myBranch) {
+            if (checkBranch.getBranchCode().equals(branchName)) {
                 return checkBranch;
             }
         }
@@ -65,7 +65,7 @@ public class Bank {
 
                 if(showTransactions) {
                     System.out.println("Transactions");
-                    ArrayList<Double> transactions = branchCustomer.getTransactionsArray();
+                    List<Double> transactions = branchCustomer.getTransactionsArray();
 
                     for(int j = 0; j < transactions.size(); j++) {
                         System.out.println("[" + (j + 1) + "] Amount " + transactions.get(j));
