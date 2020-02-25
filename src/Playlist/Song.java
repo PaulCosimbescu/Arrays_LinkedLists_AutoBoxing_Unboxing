@@ -1,4 +1,4 @@
-package LinkedListChallenge;
+package Playlist;
 
 public class Song {
 

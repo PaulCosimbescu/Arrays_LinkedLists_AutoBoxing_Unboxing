@@ -1,4 +1,4 @@
-package BankingApplicationChallenge;
+package BankingApplication;
 
 import java.util.Scanner;
 

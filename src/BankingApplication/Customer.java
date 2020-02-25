@@ -1,4 +1,4 @@
-package BankingApplicationChallenge;
+package BankingApplication;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package LinkedListChallenge;
+package Playlist;
 
 import org.jetbrains.annotations.Nullable;
 import java.util.*;

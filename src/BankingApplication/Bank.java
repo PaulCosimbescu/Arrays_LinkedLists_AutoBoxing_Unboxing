@@ -1,4 +1,4 @@
-package BankingApplicationChallenge;
+package BankingApplication;
 
 import org.jetbrains.annotations.Nullable;
 

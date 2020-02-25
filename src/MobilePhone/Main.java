@@ -1,4 +1,4 @@
-package ArrayListChallenge;
+package MobilePhone;
 
 import java.util.Scanner;
 
